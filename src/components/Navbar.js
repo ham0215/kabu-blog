@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import logo from '/img/hamkabu.jpg'
+import { Link, withPrefix } from 'gatsby'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -41,7 +40,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="ham株" style={{ width: '88px' }} />
+              <img src={`${withPrefix('/')}img/hamkabu.jpg`} alt="ham株" style={{ width: '88px' }} />
             </Link>
             {/* Hamburger menu */}
             <div
