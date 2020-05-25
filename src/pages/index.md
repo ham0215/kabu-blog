@@ -7,7 +7,7 @@ subheading: 株取引のときに思ったことを垂れ流すサイト
 mainpitch:
   title: ABOUT
   description: 趣味でやっている株取引のときに思ったことを記録するためのサイト
-description: 趣味でやっている株取引のときに思ったことを書いています。隙間時間に取引しているので、そこまで深い考察なしに直感で取引していますw素人の1つの考えとしてご覧ください。
+description: 趣味でやっている株取引のときに思ったことを書いています。素人の1つの考えとしてゆるーくご覧ください。
 intro:
   blurbs:
     - image: /img/coffee.png
