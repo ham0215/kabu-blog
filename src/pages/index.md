@@ -3,11 +3,11 @@ templateKey: index-page
 title: ハムちゃんの株日記
 image: /img/chart.jpg
 heading: 日記
-subheading: 株取引のときに思ったことを垂れ流すサイト
+subheading: 株取引のときに考えたことを垂れ流すサイト
 mainpitch:
   title: ABOUT
-  description: 趣味でやっている株取引のときに思ったことを記録するためのサイト
-description: 趣味でやっている株取引のときに思ったことを書いています。素人の1つの考えとしてゆるーくご覧ください。
+  description: 趣味でやっている株取引のときに考えたことを記録するためのサイトです
+description: 主に短期トレードの話を書きます。長期保有株はその名の通り動きが少ないのでたまに書きます。素人の1つの考えとしてゆるーくご覧ください。
 intro:
   blurbs:
     - image: /img/coffee.png
