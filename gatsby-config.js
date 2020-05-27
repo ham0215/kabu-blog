@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'ハムちゃんの株日記',
-    description:
-    '株取引のときに思ったことを垂れ流すサイト',
+    description: '株取引のときに思ったことを垂れ流すサイト',
+    siteUrl: `https://kabu.hamchance.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -77,6 +77,12 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-158087426-3",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/admin/*`],
       },
     },
   ],
