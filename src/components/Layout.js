@@ -36,7 +36,7 @@ const TemplateWrapper = ({ children }) => {
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content="株取引のときに思ったことを垂れ流すサイト" />
+        <meta property="og:description" content="国内株の取引を中心に競馬などのギャンブルやキャッシュレスのキャンペーンなどお金に関わることをつぶやくサイト" />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"

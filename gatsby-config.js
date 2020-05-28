@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'ハムちゃんの株日記',
-    description: '国内株の取引がメインだが、競馬などのギャンブルやキャッシュレスのキャンペーンなどお金に関わることをつぶやくサイト',
+    description: '国内株の取引を中心に競馬などのギャンブルやキャッシュレスのキャンペーンなどお金に関わることをつぶやくサイト',
     siteUrl: `https://kabu.hamchance.com`,
   },
   plugins: [
