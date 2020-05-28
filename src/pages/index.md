@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
-title: ハムちゃんの株日記
+title: ハムちゃんの投資日記
 image: /img/chart.jpg
 heading: 日記
-subheading: 株取引のときに考えたことを垂れ流すサイト
+subheading: 投資について日々考えたことを垂れ流すサイト
 mainpitch:
   title: ABOUT
-  description: 趣味でやっている株取引のときに考えたことを記録するためのサイトです
-description: 主に短期トレードの話を書きます。長期保有株はその名の通り動きが少ないのでたまに書きます。素人の1つの考えとしてゆるーくご覧ください。
+  description: 国内株の取引がメインだが、競馬などのギャンブルやキャッシュレスのキャンペーンなどお金に関わることをつぶやくサイト
+description: 　
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -45,7 +45,7 @@ intro:
     knowledge to anyone. This is an edit via identity...
 main:
   heading: 日記
-  description: 株取引のときに思ったことを書いています。
+  description: 国内株の取引がメインだが、競馬などのギャンブルやキャッシュレスのキャンペーンなどお金に関わることをつぶやいています。
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
