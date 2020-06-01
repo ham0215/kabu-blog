@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import AmazonFrame from '../components/AmazonFrame'
 
 export const BlogPostTemplate = ({
   content,
@@ -18,6 +19,9 @@ export const BlogPostTemplate = ({
 
   return (
     <section className="section">
+      <div>
+        <AmazonFrame src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=288&l=ur1&category=businessbooks&banner=1F0FZRVX0BQFTVCW8FG2&f=ifr&linkID=a98a29fe330529d30a398baaa5560617&t=hamchance0215-22&tracking_id=hamchance0215-22" width="320" height="50" scrolling="no" border="0" marginwidth="0" frameborder="0"></AmazonFrame>
+      </div>
       {helmet || ''}
       <div className="container content">
         <div className="columns">

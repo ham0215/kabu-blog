@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import AmazonFrame from '../components/AmazonFrame'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -45,6 +46,9 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
+      <div>
+        <AmazonFrame src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ur1&category=businessbooks&banner=10NWG2EN02RWQSDQCHR2&f=ifr&linkID=d4e95c7fd3ddf556bcdfa3c33c2d7c71&t=hamchance0215-22&tracking_id=hamchance0215-22" width="300" height="250" scrolling="no" border="0" marginwidth="0" frameborder="0"></AmazonFrame>
+      </div>
       <Footer />
     </div>
   )
