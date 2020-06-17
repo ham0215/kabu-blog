@@ -6,8 +6,8 @@ heading: 日記
 subheading: 投資について日々考えたことを垂れ流すサイト
 mainpitch:
   title: ABOUT
-  description: 国内株の話がメインだが、競馬やキャッシュレスのキャンペーンなどお金に関わることをつぶやくサイト
-description: 　
+  description: 国内株の話を中心に競馬やキャッシュのキャンペーンなどお金に関わることをつぶやくサイト
+description:
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -45,7 +45,7 @@ intro:
     knowledge to anyone. This is an edit via identity...
 main:
   heading: 日記
-  description: 国内株の話がメインだが、競馬やキャッシュレスのキャンペーンなどお金に関わることをつぶやいています。
+  description: 国内株の話を中心に競馬やキャッシュのキャンペーンなどお金に関わることをつぶやいています。
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
