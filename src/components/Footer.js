@@ -53,7 +53,7 @@ const Footer = class extends React.Component {
                 </section>
               </div>
               <div className="column is-4 social">
-                <a title="twitter" href="https://twitter.com/hamchance0215" target="_blank" rel="noopener noreferrer">
+                <a title="twitter" href="https://twitter.com/HamInvestor" target="_blank" rel="noopener noreferrer">
                   <img
                     className="fas fa-lg"
                     src={twitter}
