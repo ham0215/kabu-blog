@@ -74,6 +74,7 @@ export const BlogPostTemplate = ({
                 border="0"
                 alt=""
               />
+              <br />
               <a
                 target="_blank"
                 href="https://www.amazon.co.jp/gp/search?ie=UTF8&tag=hamchance0215-22&linkCode=ur2&linkId=c9808fbb941505ea5acf221463040129&camp=247&creative=1211&index=books&keywords=ダイヤモンドＺＡｉ"
