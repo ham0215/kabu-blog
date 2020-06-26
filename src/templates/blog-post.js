@@ -42,6 +42,22 @@ export const BlogPostTemplate = ({
             <div>
               <hr />
             </div>
+            <a
+              target="_blank"
+              href="https://www.amazon.co.jp/gp/search?ie=UTF8&tag=hamchance0215-22&linkCode=ur2&linkId=3fdfc83364727597465c9319a2c0d6f8&camp=247&creative=1211&index=books&keywords=四季報"
+            >
+              最新の四季報で企業情報をチェック！
+            </a>
+            <AmazonImg
+              src="//ir-jp.amazon-adsystem.com/e/ir?t=hamchance0215-22&l=ur2&o=9"
+              width="1"
+              height="1"
+              border="0"
+              alt=""
+            />
+            <div>
+              <hr />
+            </div>
             <PostContent content={content} />
             <div>
               <hr />
