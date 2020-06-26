@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: `https://kabu.hamchance.com`,
   },
   plugins: [
+    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
