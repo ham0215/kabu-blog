@@ -1,21 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
-import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
-import AmazonFrame from "../components/AmazonFrame";
-import AmazonImg from "../components/AmazonImg";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { kebabCase } from 'lodash';
+import { Helmet } from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import styled from 'styled-components/macro';
+import Layout from '../components/Layout';
+import Content, { HTMLContent } from '../components/Content';
+import AmazonFrame from '../components/AmazonFrame';
+import AmazonImg from '../components/AmazonImg';
+import ShareButtons from '../components/ShareButtons';
 
-export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
+const Discription = styled.div`
+  display: flex;
+`;
+
+const RightShareButtons = styled.div`
+  margin-left: auto;
+`;
+
+export const BlogPostTemplate = ({ content, contentComponent, description, tags, title, helmet, shareUrl }) => {
   const PostContent = contentComponent || Content;
 
   return (
@@ -31,14 +34,17 @@ export const BlogPostTemplate = ({
           frameborder="0"
         ></AmazonFrame>
       </div>
-      {helmet || ""}
+      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">{title}</h1>
+            <Discription>
+              <p>{description}</p>
+              <RightShareButtons>
+                <ShareButtons title={title} shareUrl={shareUrl} />
+              </RightShareButtons>
+            </Discription>
             <div>
               <hr />
             </div>
@@ -58,6 +64,7 @@ export const BlogPostTemplate = ({
             <div>
               <hr />
             </div>
+
             <PostContent content={content} />
             <div>
               <hr />
@@ -106,6 +113,10 @@ export const BlogPostTemplate = ({
               />
               <hr />
             </div>
+            <div>
+              <ShareButtons title={title} shareUrl={shareUrl} />
+              <hr />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -145,14 +156,12 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
+            <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        shareUrl={encodeURI(`https://kabu.hamchance.com/blog/${post.frontmatter.date}-${post.frontmatter.title.replace(/\//g, '-')}/`)}
       />
     </Layout>
   );
@@ -172,7 +181,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         title
         description
         tags
